@@ -2,6 +2,8 @@
 #include "GameConstants.h"
 #include <random>
 #include "cSprite.h"
+//#include "fruits.h"
+
 class cFruit : public cSprite
 {
 private:
@@ -39,5 +41,6 @@ public:
 	void setFruitVelocity(int theFruitVelocity);
 	fruitType genRandomFruitType();
 	void genFruitValue(fruitType theFruitType);
+
 };
 

@@ -18,3 +18,4 @@
 #include "cShip.h"
 #include "cFruit.h"
 #include "cCatcher.h"
+#include "fruits.h"

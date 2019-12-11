@@ -42,7 +42,7 @@ void cCatcher::update(double catcherDeltaTime)
 	this->setSpritePos({ currentSpritePos.x , currentSpritePos.y });
 	this->setBoundingRect();
 	// The line below is for debugging purposes and can be safely removed.
-	std::cout << currentSpritePos.x << "," << currentSpritePos.y << " Rot " << this->getCatcherRotation() << " DT " << catcherDeltaTime << "\n";
+	//std::cout << currentSpritePos.x << "," << currentSpritePos.y << " Rot " << this->getCatcherRotation() << " DT " << catcherDeltaTime << "\n";
 }
 
 float cCatcher::getCatcherRotation()

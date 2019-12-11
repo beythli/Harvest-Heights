@@ -52,9 +52,6 @@ void cFruit::update(double fruitDeltaTime)
 
 	this->setSpritePos({ currentSpritePos.x , currentSpritePos.y });
 	this->setBoundingRect();
-	// The line below is for debugging purposes and can be safely removed.
-	std::cout << currentSpritePos.x << "," << currentSpritePos.y << " Rot " << this->getFruitRotation() << " DT " << fruitDeltaTime << "\n";
-
 }
 
 float cFruit::getFruitRotation()
@@ -157,19 +154,22 @@ void cFruit::genFruitValue(fruitType theFruitType)
 	switch (theFruitType)
 	{
 	case fruitType::apple:
-		this->fruitValue = 50;
+		this->fruitValue = 20;
 		break;
 	case fruitType::carrot:
-		this->fruitValue = 75;
+		this->fruitValue = 20;
 		break;
 	case fruitType::lemon:
-		this->fruitValue = 100;
+		this->fruitValue = 20;
 		break;
 	case fruitType::raspberry:
-		this->fruitValue = 125;
+		this->fruitValue = 20;
 		break;
 	case fruitType::strawberry:
-		this->fruitValue = 150;
+		this->fruitValue = 20;
+		break;	
+	case fruitType::fly:
+		this->fruitValue = -20;
 		break;
 	default:
 		this->fruitValue = 0;

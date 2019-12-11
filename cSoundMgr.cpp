@@ -8,6 +8,7 @@ cSoundMgr.cpp
 
 cSoundMgr* cSoundMgr::pInstance = NULL;
 
+
 /*
 =================================================================================
 Constructor
@@ -39,6 +40,7 @@ void cSoundMgr::add(LPCSTR sndName, LPCSTR fileName, soundType sndType)
 		cSound * newSnd = new cSound(sndType);
 		newSnd->load(fileName);
 		gameSnds.insert(make_pair(sndName, newSnd));
+		
 	}
 }
 

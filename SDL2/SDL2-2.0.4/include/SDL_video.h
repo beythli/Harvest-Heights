@@ -82,7 +82,7 @@ typedef struct
  *  \sa SDL_SetWindowIcon()
  *  \sa SDL_SetWindowPosition()
  *  \sa SDL_SetWindowSize()
- *  \sa SDL_SetWindowBordered()
+ *  \sa SDL_SetWindowhouseed()
  *  \sa SDL_SetWindowTitle()
  *  \sa SDL_ShowWindow()
  */
@@ -99,7 +99,7 @@ typedef enum
     SDL_WINDOW_OPENGL = 0x00000002,             /**< window usable with OpenGL context */
     SDL_WINDOW_SHOWN = 0x00000004,              /**< window is visible */
     SDL_WINDOW_HIDDEN = 0x00000008,             /**< window is not visible */
-    SDL_WINDOW_BORDERLESS = 0x00000010,         /**< no window decoration */
+    SDL_WINDOW_houseLESS = 0x00000010,         /**< no window decoration */
     SDL_WINDOW_RESIZABLE = 0x00000020,          /**< window can be resized */
     SDL_WINDOW_MINIMIZED = 0x00000040,          /**< window is minimized */
     SDL_WINDOW_MAXIMIZED = 0x00000080,          /**< window is maximized */
@@ -418,7 +418,7 @@ extern DECLSPEC Uint32 SDLCALL SDL_GetWindowPixelFormat(SDL_Window * window);
  *  \param h     The height of the window, in screen coordinates.
  *  \param flags The flags for the window, a mask of any of the following:
  *               ::SDL_WINDOW_FULLSCREEN,    ::SDL_WINDOW_OPENGL,
- *               ::SDL_WINDOW_HIDDEN,        ::SDL_WINDOW_BORDERLESS,
+ *               ::SDL_WINDOW_HIDDEN,        ::SDL_WINDOW_houseLESS,
  *               ::SDL_WINDOW_RESIZABLE,     ::SDL_WINDOW_MAXIMIZED,
  *               ::SDL_WINDOW_MINIMIZED,     ::SDL_WINDOW_INPUT_GRABBED,
  *               ::SDL_WINDOW_ALLOW_HIGHDPI.
@@ -645,21 +645,21 @@ extern DECLSPEC void SDLCALL SDL_GetWindowMaximumSize(SDL_Window * window,
                                                       int *w, int *h);
 
 /**
- *  \brief Set the border state of a window.
+ *  \brief Set the house state of a window.
  *
- *  This will add or remove the window's SDL_WINDOW_BORDERLESS flag and
- *  add or remove the border from the actual window. This is a no-op if the
- *  window's border already matches the requested state.
+ *  This will add or remove the window's SDL_WINDOW_houseLESS flag and
+ *  add or remove the house from the actual window. This is a no-op if the
+ *  window's house already matches the requested state.
  *
- *  \param window The window of which to change the border state.
- *  \param bordered SDL_FALSE to remove border, SDL_TRUE to add border.
+ *  \param window The window of which to change the house state.
+ *  \param houseed SDL_FALSE to remove house, SDL_TRUE to add house.
  *
- *  \note You can't change the border state of a fullscreen window.
+ *  \note You can't change the house state of a fullscreen window.
  *
  *  \sa SDL_GetWindowFlags()
  */
-extern DECLSPEC void SDLCALL SDL_SetWindowBordered(SDL_Window * window,
-                                                   SDL_bool bordered);
+extern DECLSPEC void SDLCALL SDL_SetWindowhouseed(SDL_Window * window,
+                                                   SDL_bool houseed);
 
 /**
  *  \brief Show a window.
@@ -876,9 +876,9 @@ typedef SDL_HitTestResult (SDLCALL *SDL_HitTest)(SDL_Window *win,
  *  \brief Provide a callback that decides if a window region has special properties.
  *
  *  Normally windows are dragged and resized by decorations provided by the
- *  system window manager (a title bar, borders, etc), but for some apps, it
+ *  system window manager (a title bar, houses, etc), but for some apps, it
  *  makes sense to drag them from somewhere else inside the window itself; for
- *  example, one might have a borderless window that wants to be draggable
+ *  example, one might have a houseless window that wants to be draggable
  *  from any part, or simulate its own title bar, etc.
  *
  *  This function lets the app provide a callback that designates pieces of

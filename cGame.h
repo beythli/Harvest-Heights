@@ -8,6 +8,7 @@ cGame.h
 */
 
 #include <SDL.h>
+//#include "fruits.h"
 
 // Game specific includes
 #include "GameSpecific.h"
@@ -47,26 +48,43 @@ private:
 
 	// Sprites for displaying background and rocket textures
 	cSprite spriteBkgd;
+	cSprite house;
+	cSprite barn;
+	cSprite cow;
+	cSprite chicken;
+	cSprite chicken2;
+	cSprite tree;
+	cSprite tree2;
+	cSprite tractor;
+	cSprite border;
+
+	
 	// game related variables
 	vector<LPCSTR> textureName;
 	vector<LPCSTR> textName;
 	vector<LPCSTR> texturesToUse;
+	
 	// Fonts to use
 	vector<LPCSTR> fontList;
 	vector<LPCSTR> fontsToUse;
+	
 	// Text for Game
 	vector<LPCSTR> gameTextNames;
 	vector<LPCSTR> gameTextList;
+	vector<LPCSTR> gameTextList2;
 	vector<LPCSTR> highScoreTextures;
+	
 	// Game Sounds
 	vector<LPCSTR> soundList;
 	vector<soundType> soundTypes;
 	vector<LPCSTR> soundsToUse;
+	
 	// Create vector array of button textures
 	vector<LPCSTR> btnNameList;
 	vector<LPCSTR> btnTexturesToUse;
 	vector<SDL_Point> btnPos;
 	vector <cButton> theButtons;
+	
 	// Game objects
 	int renderWidth = 0, renderHeight = 0;
 	SDL_Rect pos = { 0,0,0,0 };
@@ -78,6 +96,22 @@ private:
 
 	fruits theFruits;
 	cCatcher theCatcher;
+
+	int fruitsCaught = 0;
+	std::string strScore = "";
+	std::string strHealth = "";
+	std::string strOver = "";
+	gameState theGameState = gameState::menu;
+	btnTypes theBtnType = btnTypes::exit;
+	SDL_Point theAreaClicked = { 0,0 };
+	bool gameOver = false;
+	bool soundPlaying = false;
+
+	//int numOfHearts = 3;
+	//int health;
+
+	int counter = 0;
+	int afruit = 0;
 };
 
 #endif

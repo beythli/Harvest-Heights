@@ -60,9 +60,6 @@
     <ClCompile Include="cRocket.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="cBottle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="cEnemy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -73,6 +70,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="cCatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fruits.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -125,9 +125,6 @@
     <ClInclude Include="cRocket.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="cBottle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="cEnemy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -138,6 +135,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cCatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fruits.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

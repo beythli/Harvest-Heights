@@ -1,7 +1,7 @@
 #ifndef _GAMECONSTANTS_H
 #define _GAMECONSTANTS_H
 
-// Windows & SDL 
+// Windows & SDL
 #include <stdlib.h>
 #include <Windows.h>
 #include <iostream>
@@ -34,7 +34,7 @@ constexpr auto WINDOW_TITLE = "Name of My Game";
 constexpr auto WINDOW_WIDTH = 1024;
 constexpr auto WINDOW_HEIGHT = 768;
 
-// This header file contains all the constants & enumarated types for the game
+// This header file contains all the constants & enumarated types for the game.
 typedef struct
 {
 	float  X;
@@ -77,11 +77,11 @@ inline bool operator!=(MapRC const &a, MapRC const &b)
 	}
 }
 
-enum class fruitType { apple, carrot, lemon, raspberry, strawberry };
+enum class fruitType { apple, carrot, lemon, raspberry, strawberry, fly };
 enum class catcherType { basket, trolley };
 enum class textType { solid, blended, shaded };
 enum class soundType { sfx, music };
-enum class gameState {menu, instructions, createmap, playing, end, quit, highscore };
+enum class gameState {menu, howtoplay, createmap, playing, end, quit, highscore };
 enum class btnTypes { exit, instruct, load, play, save, settings, hscore };
 
 #endif
