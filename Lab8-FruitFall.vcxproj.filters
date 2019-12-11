@@ -57,15 +57,6 @@
     <ClCompile Include="myGame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="cRocket.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cEnemy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cShip.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="cFruit.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -120,15 +111,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GameSpecific.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cRocket.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cEnemy.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cShip.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="cFruit.h">

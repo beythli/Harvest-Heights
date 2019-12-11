@@ -58,8 +58,8 @@ void cGame::initialise(SDL_Renderer* theRenderer)
 	// Store the textures
 	textureName = { "theBackground", "apple", "carrot" , "lemon" , "raspberry", "strawberry" , "basket", "openingScreen", "endScreen", "house", "border", "howToPlay", "barn", "cow", "chicken", "chicken2","tree", "tree2", "tractor"};
 	texturesToUse = { "Images/Bkg/Background.jpg", "Images/Sprites/Apple.png", "Images/Sprites/Carrot.png" , "Images/Sprites/Lemon.png" , "Images/Sprites/Raspberry.png", "Images/Sprites/Strawberry.png" , "Images/Sprites/Basket64x64.png", 
-					"../Images/Bkg/openingScreen.jpg", "../Images/Bkg/endScreen.jpg", "../Images/Sprites/House.png", "../Images/Sprites/Border.png", "../Images/Bkg/HowToPlay2.png", "../Images/Sprites/Barn.png", "../Images/Sprites/Cow.png", 
-					"../Images/Sprites/Chicken.png", "../Images/Sprites/Chicken2.png", "../Images/Sprites/tree.png", "../Images/Sprites/tree.png", "../Images/Sprites/Tractor.png" };
+					"Images/Bkg/openingScreen.jpg", "Images/Bkg/endScreen.jpg", "Images/Sprites/House.png", "Images/Sprites/Border.png", "Images/Bkg/HowToPlay2.png", "Images/Sprites/Barn.png", "Images/Sprites/Cow.png", 
+					"Images/Sprites/Chicken.png", "Images/Sprites/Chicken2.png", "Images/Sprites/tree.png", "Images/Sprites/tree.png", "Images/Sprites/Tractor.png" };
 	for (unsigned int tCount = 0; tCount < textureName.size(); tCount++)
 	{	
 		theTextureMgr->addTexture(textureName[tCount], texturesToUse[tCount]);
@@ -118,7 +118,7 @@ void cGame::initialise(SDL_Renderer* theRenderer)
 	// Load game sounds
 	soundList = { "theme", "catch", "menu", "miss"};
 	soundTypes = { soundType::music, soundType::sfx, soundType::music, soundType::sfx };
-	soundsToUse = { "../Audio/Theme/2AM_Boogie.wav", "../Audio/SFX/LevelUp_Catch.wav", "../Audio/Theme/Good_Evening.wav",  "../Audio/SFX/Error Sound.wav" };
+	soundsToUse = { "Audio/Theme/2AM_Boogie.wav", "Audio/SFX/LevelUp_Catch.wav", "Audio/Theme/Good_Evening.wav",  "Audio/SFX/Error Sound.wav" };
 	for (unsigned int sounds = 0; sounds < soundList.size(); sounds++)
 	{
 		theSoundMgr->add(soundList[sounds], soundsToUse[sounds], soundTypes[sounds]);
@@ -126,8 +126,8 @@ void cGame::initialise(SDL_Renderer* theRenderer)
 
 
 	//buttons
-	btnNameList = { "quit_btn", "howtoplay_btn", "menu_btn", "play_btn", "save_btn" };
-	btnTexturesToUse = { "../Images/Buttons/button_quit2.png", "../Images/Buttons/button_howtoplay.png", "../Images/Buttons/button_menu.png", "../Images/Buttons/button_play2.png", "Images/Buttons/button_save.png" };
+	btnNameList = { "quit_btn", "howtoplay_btn", "menu_btn", "play_btn" };
+	btnTexturesToUse = { "Images/Buttons/button_quit2.png", "Images/Buttons/button_howtoplay.png", "Images/Buttons/button_menu.png", "Images/Buttons/button_play2.png"};
 	btnPos = { { 400, 375 }, { 400, 300 }, { 400, 300 }, { 500, 500 }, { 400, 300 }, { 740, 500 }, { 400, 300 } };
 	for (unsigned int bCount = 0; bCount < btnNameList.size(); bCount++)
 	{
